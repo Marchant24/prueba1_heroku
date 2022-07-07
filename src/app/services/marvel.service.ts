@@ -13,7 +13,7 @@ export class MarvelService {
   
   getMarvel(){
     const query = {
-      limit: 40,
+      limit: 100,
       ts: new Date().getTime(),
       apikey: environment.publickey,
       hash: Md5.init(new Date().getTime() + environment.privatekey + environment.publickey)
